@@ -2,10 +2,7 @@
 
 const CLIENT_ID = "801579d3b1ba42eba6a12370d3f6831b";
 
-const REDIRECT_URI =
-"https://SEU-USUARIO.github.io/meu-portfolio/";
-
-
+const REDIRECT_URI = "https://miguelpd250-cmd.github.io/nextege/";
 
 const SCOPES = "user-read-currently-playing";
 
