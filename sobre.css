@@ -1,0 +1,185 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fundo{
+    background-color: black;
+}
+
+
+/* CONTAINER PRINCIPAL */
+
+.container {
+    width: 92%;
+    max-width: 1100px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 35px 30px;
+}
+
+/* TITULOS */
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 25px;
+    color: white;
+}
+
+/* PROJETOS */
+
+.projetos {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.projetos-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+/* CARDS */
+
+.card {
+    background: #d8d8d8;
+    color: #111;
+    border-radius: 0 0 17px 17px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* IMAGEM DE CODIGO */
+
+.codigo {
+    height: 100px;
+    background: #202020;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.codigo pre {
+    color: #b6b6b6;
+    font-size: 6px;
+    line-height: 1.7;
+    white-space: pre;
+}
+
+/* CONTEUDO DOS CARDS */
+
+.card-conteudo {
+    padding: 18px;
+    min-height: 180px;
+}
+
+.card-conteudo h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.card-conteudo p {
+    font-size: 12px;
+    line-height: 1.35;
+    color: #333;
+}
+
+/* SKILLS */
+
+.skills {
+    width: 100%;
+}
+
+.skills h2 {
+    margin-bottom: 25px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skills-container img {
+    width: 65px;
+    height: 70px;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.skills-container img:hover {
+    transform: scale(1.15);
+}
+
+/* RESPONSIVIDADE PARA CELULAR */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: 100%;
+        padding: 25px 18px;
+    }
+
+    .projetos-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .projetos {
+        margin-bottom: 55px;
+    }
+
+    .card-conteudo {
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .skills-container {
+        justify-content: center;
+        gap: 35px;
+    }
+
+    .skills-container img {
+        width: 55px;
+        height: 60px;
+    }
+}
+
+    .card2{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 12px;
+    margin: 20px auto;
+    }
+
+
+    .card2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 150px;
+        height: 52px;
+
+        background: #7C3AED;
+        color: white;
+
+        border-radius: 9px;
+        font-size: 23px;
+        font-weight: bold;
+        text-decoration: underline;
+
+        transition: 0.3s;
+    }
